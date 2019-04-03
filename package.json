@@ -1,0 +1,52 @@
+{
+  "name": "tallbag-basics",
+  "version": "1.0.1",
+  "description": "Basic tallbag factories and operators to get started with",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staltz/tallbag-basics.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "bundle": "$(npm bin)/browserify index.js -o dist/bundle.js",
+    "bundle.min": "node minify.js",
+    "test": "tape test.js"
+  },
+  "author": "staltz.com",
+  "license": "MIT",
+  "keywords": [
+    "callbag",
+    "tallbag",
+    "callback",
+    "standard",
+    "spec",
+    "observable",
+    "iterable"
+  ],
+  "dependencies": {
+    "tallbag": "~1.2.0",
+    "tallbag-for-each": "1.0.x",
+    "tallbag-from-obs": "1.0.x",
+    "tallbag-from-iter": "1.0.x",
+    "tallbag-from-event": "1.0.x",
+    "tallbag-from-promise": "1.0.x",
+    "tallbag-interval": "1.0.x",
+    "tallbag-map": "1.0.x",
+    "tallbag-scan": "1.0.x",
+    "tallbag-flatten": "1.0.x",
+    "tallbag-take": "1.0.x",
+    "tallbag-skip": "1.0.x",
+    "tallbag-filter": "1.0.x",
+    "tallbag-merge": "1.0.x",
+    "tallbag-concat": "1.0.x",
+    "tallbag-combine": "1.0.x",
+    "tallbag-share": "1.0.x",
+    "callbag-pipe": "1.1.x"
+  },
+  "devDependencies": {
+    "browserify": "^15.2.0",
+    "google-closure-compiler-js": "^20170910.0.0",
+    "tape": "^4.8.0",
+    "uglify-js": "^3.3.8"
+  }
+}
